@@ -15,6 +15,7 @@ export const Nav = styled.nav`
   top: 0;
   left: 0;
   img{
+    margin-top: 2rem;
     margin-left: 3rem;
   }
   @media screen and (max-width: 960px) {
