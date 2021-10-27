@@ -4,16 +4,19 @@ import {Link} from "react-router-dom";
 
 export const Nav = styled.nav`
   z-index: 3;
-  margin: 15px 0;
+  margin: ${props => props.normal ? '30px 0' : '15px 0'};
   background: white;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: ${props => props.normal ? '' : 'sticky'};
   top: 0;
   left: 0;
+  img{
+    margin-left: 3rem;
+  }
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }

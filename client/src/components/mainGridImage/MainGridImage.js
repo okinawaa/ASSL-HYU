@@ -14,16 +14,16 @@ function MainGridImage({member}) {
 
     if (member) {
         images = [
-            {images: member1, desc: " Teacher’s Day."},
-            {images: member2, desc: " Teacher’s Birthday."},
-            {images: member3, desc: " Korean Physical Society in JEJU"}
+            {image: member1, desc: " Teacher’s Day."},
+            {image: member2, desc: " Teacher’s Birthday."},
+            {image: member3, desc: " Korean Physical Society in JEJU"}
         ]
     } else {
         images = [
-            {images: mainImage1},
-            {images: mainImage2},
-            {images: mainImage3},
-            {images: mainImage4}
+            {image: mainImage1},
+            {image: mainImage2},
+            {image: mainImage3},
+            {image: mainImage4}
         ]
     }
 
@@ -32,9 +32,9 @@ function MainGridImage({member}) {
             <Row gutter={{xs: 2, sm: 4, md: 8, lg: 16}}>
                 {
                     images.map(item => (
-                        <Col lg={1} md={2} xs={4}>
+                        <Col key={item.image} lg={1} md={2} xs={4}>
                             <ColContentContainer >
-                                <img src={item.images} alt={item.images}/>
+                                <img src={item.image} alt={item.image}/>
                                 {member &&
                                 <span> {item.desc} </span>
                                 }

@@ -1,32 +1,33 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Nav, NavbarContainer, NavLogo} from "./navBarStyles";
+import logo from '../../images/logo.png'
+import {Link} from "react-router-dom";
 
-// const toggleHome = () => {
-//     scroll.scrollToTop({
-//         duration: 3000,
-//     })
-// }
+function NavBar({normal}) {
 
-function NavBar() {
 
     return (
-        <Nav>
+        <Nav normal={normal}>
+            {
+                normal &&
+                <Link to={"/"}>
+                    <img src={logo}/>
+                </Link>
+            }
             <NavbarContainer>
                 <NavLogo to={"/"}>
                     Home
                 </NavLogo>
-                <NavLogo to={"/"}>
+                <NavLogo to={"/members"}>
                     Members
                 </NavLogo>
-                <NavLogo to={"/"}>
+                <NavLogo to={"/research"}>
                     Research
                 </NavLogo>
-                <NavLogo to={"/"}>
+                <NavLogo to={"/publication"}>
                     Publication
                 </NavLogo>
-
             </NavbarContainer>
-            {/*<NavLogo to='/archive'>asdasd</NavLogo>*/}
         </Nav>
     )
 }

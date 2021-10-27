@@ -5,6 +5,8 @@ import NavBar from "../../components/navbar/NavBar";
 import MainGridImage from "../../components/mainGridImage/MainGridImage";
 import BorderLine from "../../components/borderLine/borderLine";
 import Title from "../../components/title/Title";
+import MainGridText from "../../components/mainGridText/MainGridText";
+import Footer from "../../components/footer/Footer";
 
 function HomePage(props) {
 
@@ -28,8 +30,8 @@ function HomePage(props) {
                 <MainGridImage member={"member"}/>
                 <BorderLine/>
                 <Title title={"RESEARCH IN THE ASSL LABS IS SUPPORTED BY"}/>
-
-
+                <MainGridText/>
+                <Footer/>
             </ContentContainer>
 
 
