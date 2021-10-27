@@ -28,9 +28,19 @@ export const MainImgContainer = styled.div`
     @media screen and (max-width: 400px ){
       font-size: 1.3rem;
     }
-    
-
   }
 `
 
 
+export const ContentContainer = styled.div`
+  margin: 0 3rem;
+  @media screen and (max-width: 900px ){
+    margin: 0 1.2rem;
+  }
+  @media screen and (max-width: 400px ){
+    margin: 0 0.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+`
