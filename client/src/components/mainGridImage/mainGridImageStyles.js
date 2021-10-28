@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainGridImageContainer = styled.div`
-  margin: 3rem 0;
+  margin: 6rem 0;
   width: 100%;
   & > div{
     display: flex;
@@ -11,6 +11,15 @@ export const MainGridImageContainer = styled.div`
   img {
     width: 100%;
     height: 130px;
+    border : 3px solid #70AD47;
+    border-radius: 6px;
+    transition: 0.4s ease-in-out;
+    z-index: 0;
+    cursor: pointer;
+    &:hover{
+      z-index: 2;
+      transform: scale(1.2);
+    }
     @media screen and (min-width: 400px) {
       height: 150px;
     }
@@ -26,8 +35,7 @@ export const MainGridImageContainer = styled.div`
   span{
     margin-top: 2rem;
     font-size: 1.4rem;
-    font-weight: 800;
-    color: #7F7F7F;
+    color: #656565;
   }
   
 `

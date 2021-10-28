@@ -18,8 +18,8 @@ export const MainImgContainer = styled.div`
   h1 {
     position: absolute;
     color: white;
-    bottom: 0;
-    left: 0;
+    bottom: 1rem;
+    left: 1rem;
     font-size: 3rem;
 
     @media screen and (max-width: 900px ){
@@ -33,14 +33,23 @@ export const MainImgContainer = styled.div`
 
 
 export const ContentContainer = styled.div`
-  margin: 0 3rem;
-  @media screen and (max-width: 900px ){
+  margin: 0 15vh;
+  @media screen and (max-width: 900px ) {
     margin: 0 1.2rem;
   }
-  @media screen and (max-width: 400px ){
+  @media screen and (max-width: 400px ) {
     margin: 0 0.5rem;
   }
+
   p {
+    line-height: 1.9rem;
+    margin: 6rem 0;
     font-size: 1.2rem;
+
+    span {
+      font-weight: 900;
+      color: #2c4b21;
+      font-size: 1.25rem;
+    }
   }
 `

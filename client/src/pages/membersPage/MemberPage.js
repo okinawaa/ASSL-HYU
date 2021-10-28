@@ -15,19 +15,30 @@ import JinPilKimImg from "../../images/membersPage/JinPilKim.png"
 import HyeMiParkImg from "../../images/membersPage/HyeMiPark.png"
 import InChulParkImg from "../../images/membersPage/InChulPark.png"
 import EunKyoungParkImg from "../../images/membersPage/EunKyoungPark.png"
-function MemberPage(props) {
-    const members =  [
-        {name : "Eun Ji Park", position:"Ph. D. student", desc:"pj2033@gmail.com" , image : EunJiParkImg},
-        {name : "Jong Seon Park", position:"Ph. D. student", desc:"jonsn@gmail.com" , image : JongSeonParkImg},
-        {name : "Ye Jin Oh", position:"Ph. D. student", desc:"ohyejin0730@gmail.com" , image : YeJinOhImg},
-        {name : "Jin Pil Kim", position:"M.S. student", desc:"kimjinpil0649@gmail.com", image : JinPilKimImg },
-        {name : "Hye Mi Park", position:"M.S. student", desc:"hyem92@hanyang.ac.kr", image : HyeMiParkImg },
-        {name : "In Chul Park", position:"Undergraduate Student", desc:"qkrdlscjf@hanyang.ac.kr", image : InChulParkImg },
-        {name : "Eun Kyoung Park", position:"Undergraduate Student", desc:"kamj1020@hanyang.ac.kr" , image : EunKyoungParkImg},
+
+function MemberPage() {
+    const members = [
+        {name: "Eun Ji Park", position: "Ph. D. student", desc: "pj2033@gmail.com", image: EunJiParkImg},
+        {name: "Jong Seon Park", position: "Ph. D. student", desc: "jonsn@gmail.com", image: JongSeonParkImg},
+        {name: "Ye Jin Oh", position: "Ph. D. student", desc: "ohyejin0730@gmail.com", image: YeJinOhImg},
+        {name: "Jin Pil Kim", position: "M.S. student", desc: "kimjinpil0649@gmail.com", image: JinPilKimImg},
+        {name: "Hye Mi Park", position: "M.S. student", desc: "hyem92@hanyang.ac.kr", image: HyeMiParkImg},
+        {
+            name: "In Chul Park",
+            position: "Undergraduate Student",
+            desc: "qkrdlscjf@hanyang.ac.kr",
+            image: InChulParkImg
+        },
+        {
+            name: "Eun Kyoung Park",
+            position: "Undergraduate Student",
+            desc: "kamj1020@hanyang.ac.kr",
+            image: EunKyoungParkImg
+        },
 
     ]
     return (
-        <>
+        <div>
             <NavBar normal={"normal"}/>
             <MemberContainer>
                 <Title title={"MEMBERS"}/>
@@ -44,17 +55,20 @@ function MemberPage(props) {
                             desc={"KITECH (Korean Institute of Industrial Technology)\n" +
                             "hoonj@kitech.re.kr\n"}/>
                 {
-                    members.map(member=>(
+                    members.map(member => (
                         <React.Fragment key={member.name}>
                             <BorderLine/>
-                            <MemberCard image={member.image} name={member.name} desc={member.desc} position={member.position}/>
+                            <MemberCard image={member.image} name={member.name} desc={member.desc}
+                                        position={member.position}/>
                         </React.Fragment>
                     ))
-
-
                 }
+                <BorderLine/>
+                <Title title={"ALUMNI"}/>
+                <ArticleList alumni={"alumni"}/>
+
             </MemberContainer>
-        </>
+        </div>
     );
 }
 

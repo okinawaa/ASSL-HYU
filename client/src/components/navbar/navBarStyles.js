@@ -14,10 +14,17 @@ export const Nav = styled.nav`
   position: ${props => props.normal ? '' : 'sticky'};
   top: 0;
   left: 0;
-  img{
+
+  img {
+    transition: 0.3s ease-in-out;
     margin-top: 2rem;
     margin-left: 3rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -39,7 +46,13 @@ export const NavLogo = styled(Link)`
   font-weight: bold;
   text-decoration: none;
   text-shadow: 0px 1px #ffffff, 4px 4px 0px #dad7d7;
+  transition: 0.3s ease-in-out;
 
+  &:hover {
+    color: #70AD47;
+    font-size: 1.6rem;
+
+  }
 `;
 
 

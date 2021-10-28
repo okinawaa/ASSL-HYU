@@ -5,7 +5,7 @@ export const MemberCardContainer = styled.div`
   margin: 5rem 0;
   display: flex;
   img{
-    border : 1.5px solid #70AD47;
+    border : 2.5px solid #70AD47;
     border-radius: 4px;
     width: 400px;
     height: 400px;

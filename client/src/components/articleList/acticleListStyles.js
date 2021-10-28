@@ -7,7 +7,7 @@ export const ArticleListContainer = styled.div`
 `
 
 export const ArticleTextContainer = styled.div`
-
+    margin: 2rem 0;
     display: flex;
     div{
       font-size: 1.2rem;

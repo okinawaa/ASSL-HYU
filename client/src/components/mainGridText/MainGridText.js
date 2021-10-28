@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainGridTextContainer} from "./mainGridImageStyles";
+import {MainGridTextContainer} from "./mainGridTextStyles";
 
 function MainGridText(props) {
     return (

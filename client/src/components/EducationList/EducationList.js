@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainGridTextContainer} from "../mainGridText/mainGridImageStyles";
+import {MainGridTextContainer} from "../mainGridText/mainGridTextStyles";
 
 function EducationList(props) {
 

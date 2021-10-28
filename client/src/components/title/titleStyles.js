@@ -9,7 +9,7 @@ export const TitleStyled = styled.div`
     width: 100%;
     color: #2c4b21;
     font-size: 2.1rem;
-    font-weight: 1000;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative;
     padding-bottom: .7rem;
@@ -28,7 +28,7 @@ export const TitleStyled = styled.div`
     width: 100%;
     color: #2c4b21;
     font-size: 1.7rem;
-    font-weight: 1000;
+    font-weight: 600;
     position: relative;
     padding-bottom: .7rem;
 
