@@ -29,10 +29,10 @@ function MainGridImage({member}) {
 
     return (
         <MainGridImageContainer member={member}>
-            <Row gutter={{xs: 2, sm: 4, md: 8, lg: 16}}>
+            <Row gutter={[24, 24]}>
                 {
                     images.map(item => (
-                        <Col key={item.image} lg={1} md={2} xs={4}>
+                        <Col key={item.image} lg={6} md={8} xs={12}>
                             <ColContentContainer >
                                 <img src={item.image} alt={item.image}/>
                                 {member &&

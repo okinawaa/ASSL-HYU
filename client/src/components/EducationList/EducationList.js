@@ -1,5 +1,6 @@
 import React from 'react';
 import {MainGridTextContainer} from "../mainGridText/mainGridTextStyles";
+import {OneLineContainer} from "./educationListStyles";
 
 function EducationList(props) {
 
@@ -18,10 +19,10 @@ function EducationList(props) {
             <MainGridTextContainer>
                 {
                     carrer.map(item=>(
-                        <>
+                        <OneLineContainer>
                         <div>{item.year}</div>
                         <div>{item.desc}</div>
-                        </>
+                        </OneLineContainer>
                     ))
                 }
 

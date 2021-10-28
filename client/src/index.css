@@ -51,11 +51,12 @@ code {
 }
 /* ANIMATIONS */
 .slide-enter {
-    transform: translateX(80%);
     opacity: 0.0;
+    transform: translateX(80%);
+
 }
 .slide-enter-active {
     transform: translateX(0%);
-    transition: transform 1000ms ease-in-out;
     opacity: 1.0;
+    transition: opacity 700ms ease-in-out, transform 700ms ease-in-out;
 }

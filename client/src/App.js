@@ -15,8 +15,8 @@ function App() {
                         <TransitionGroup>
                             <CSSTransition timeout={3000} classNames="slide" key={location.key} unmountOnExit={true}>
                                 <Switch>
-                                    <Route exact path="/members" component={MemberPage}/>
                                     <Route exact path="/" component={HomePage}/>
+                                    <Route exact path="/members" component={MemberPage}/>
                                     <Route exact path="/research" component={ResearchPage}/>
                                     <Route exact path="/publication" component={PublicationPage}/>
                                     <Redirect from="*" to="/"/>

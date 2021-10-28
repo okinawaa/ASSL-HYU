@@ -1,5 +1,12 @@
 import React from 'react';
-import {BlockQuoteStyle, InlineCode, MarkDownStyle, Pre, ResearchContainer} from "./researchPageStyles";
+import {
+    BlockQuoteStyle,
+    InlineCode,
+    MarkDownStyle,
+    Pre,
+    ResearchContainer,
+    ResearchPageContainer
+} from "./researchPageStyles";
 import NavBar from "../../components/navbar/NavBar";
 import ReactMarkdown from "react-markdown";
 import Title from "../../components/title/Title";
@@ -99,7 +106,7 @@ const secondMarkdown = `
 
 function ResearchPage(props) {
     return (
-        <div>
+        <ResearchPageContainer>
             <NavBar normal={"normal"}/>
             <ResearchContainer>
 
@@ -120,7 +127,7 @@ function ResearchPage(props) {
                 </MarkDownStyle>
 
             </ResearchContainer>
-        </div>
+        </ResearchPageContainer>
     );
 }
 

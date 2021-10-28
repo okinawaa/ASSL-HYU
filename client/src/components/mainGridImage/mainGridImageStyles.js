@@ -3,25 +3,33 @@ import styled from "styled-components";
 export const MainGridImageContainer = styled.div`
   margin: 6rem 0;
   width: 100%;
-  & > div{
+
+  & > div {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
 
   }
+
   img {
     width: 100%;
     height: 130px;
-    border : 3px solid #70AD47;
+    border: 3px solid #70AD47;
     border-radius: 6px;
     transition: 0.4s ease-in-out;
     z-index: 0;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       z-index: 2;
       transform: scale(1.2);
     }
-    @media screen and (min-width: 400px) {
-      height: 150px;
+
+    @media screen and (max-width: 500px) {
+      width: 90%;
+      height: 90%;
     }
     @media screen and (min-width: 1000px) {
       height: ${props => props.member ? '350px' : '250px'};
@@ -32,12 +40,12 @@ export const MainGridImageContainer = styled.div`
     }
   }
 
-  span{
+  span {
     margin-top: 2rem;
     font-size: 1.4rem;
     color: #656565;
   }
-  
+
 `
 
 export const ColContentContainer = styled.div`
