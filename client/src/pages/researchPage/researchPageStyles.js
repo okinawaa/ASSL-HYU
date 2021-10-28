@@ -13,15 +13,15 @@ export const ResearchContainer = styled.div`
   @media screen and (max-width: 500px ) {
     margin: 2rem 2vh;
   }
-  
-  img{
+
+  img {
     @media screen and (max-width: 500px ) {
-    width: 100%;
+      width: 100%;
     }
   }
-  
+
   ul > li {
-    
+
     font-size: 1.1rem;
   }
 
@@ -36,13 +36,24 @@ export const ResearchContainer = styled.div`
   }
 
   pre {
+
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
     
-    & > code{
-      display: inline-block;
-      white-space: normal;
-      max-width: 100%;
+
+    & > code {
+
+      //@media screen and (max-width: 1200px ) {
+      //
+      //  display: inline-block;
+      //  white-space: normal;
+      //  max-width: 100%;
+      //}
+
     }
-    
+
     background-color: #e5eaee;
     padding: 2rem;
     line-height: 1.5rem;
