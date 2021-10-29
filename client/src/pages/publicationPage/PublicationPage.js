@@ -5,6 +5,7 @@ import { Table, Tag} from "antd";
 import 'antd/dist/antd.css';
 import {Link} from "react-router-dom";
 import {notices} from "../../notice/notice";
+import Title from "../../components/title/Title";
 
 const columns = [
     {
@@ -63,7 +64,7 @@ function PublicationPage(props) {
         <div>
             <NavBar normal={"normal"}/>
             <PublicationContainer>
-
+                <Title title={"공지사항"}/>
                 <Table columns={columns} dataSource={notices}/>
 
 

@@ -11,7 +11,6 @@ function App() {
     return (
         <div>
             <ScrollToTop/>
-
             <Route
                 render={({location}) => {
                     return (
