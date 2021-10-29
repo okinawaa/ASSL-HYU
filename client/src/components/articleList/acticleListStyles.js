@@ -20,6 +20,6 @@ export const ArticleTextContainer = styled.div`
     }
   
     div:last-of-type{
-      width: 80%;
+      width: 81%;
     }
 `
