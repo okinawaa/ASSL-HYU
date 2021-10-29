@@ -16,7 +16,7 @@ function MainGridImage({member}) {
         images = [
             {image: member1, desc: " Teacher’s Day."},
             {image: member2, desc: " Teacher’s Birthday."},
-            {image: member3, desc: " Korean Physical Society in JEJU"}
+            {image: member3, desc: " Korean Physical Society in JEJU"},
         ]
     } else {
         images = [

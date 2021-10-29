@@ -1,8 +1,21 @@
 import React from 'react';
+import NavBar from "../../components/navbar/NavBar";
+import {PublicationContainer} from "./publicationPageStyles";
 
 function PublicationPage(props) {
     return (
-        <div>asdsad</div>
+        <div>
+            <NavBar normal={"normal"}/>
+            <PublicationContainer>
+
+
+
+
+            </PublicationContainer>
+
+
+
+        </div>
     );
 }
 
