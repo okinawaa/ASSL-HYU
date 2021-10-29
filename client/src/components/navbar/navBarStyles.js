@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   z-index: 3;
   margin: ${props => props.normal ? '30px 0' : '15px 0'};
   background: white;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;

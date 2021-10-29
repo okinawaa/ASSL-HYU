@@ -7,12 +7,13 @@ export const MainGridImageContainer = styled.div`
   & > div {
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 500px) {
-      flex-direction: column;
-    }
+    //@media screen and (max-width: 500px) {
+    //  flex-direction: column;
+    //}
 
   }
 
+  
   img {
     width: 100%;
     height: 130px;
@@ -27,9 +28,9 @@ export const MainGridImageContainer = styled.div`
       transform: scale(1.2);
     }
 
-    @media screen and (max-width: 500px) {
-      width: 90%;
-      height: 90%;
+    @media screen and (max-width: 750px) {
+      width: 100%;
+      height: 100%;
     }
     @media screen and (min-width: 1000px) {
       height: ${props => props.member ? '350px' : '250px'};
@@ -49,6 +50,7 @@ export const MainGridImageContainer = styled.div`
 `
 
 export const ColContentContainer = styled.div`
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;

@@ -8,6 +8,8 @@ import member1 from '../../images/homePage/member1.png'
 import member2 from '../../images/homePage/member2.png'
 import member3 from '../../images/homePage/member3.png'
 import {ColContentContainer, MainGridImageContainer} from "./mainGridImageStyles";
+import { BrowserView, MobileView } from 'react-device-detect';
+
 
 function MainGridImage({member}) {
     let images;
@@ -32,7 +34,7 @@ function MainGridImage({member}) {
             <Row gutter={[24, 24]}>
                 {
                     images.map(item => (
-                        <Col key={item.image} lg={6} md={8} xs={12}>
+                        <Col key={item.image} lg={6} md={12} xs={24}>
                             <ColContentContainer >
                                 <img src={item.image} alt={item.image}/>
                                 {member &&

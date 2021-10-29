@@ -15,7 +15,7 @@ function App() {
                 render={({location}) => {
                     return (
                         <TransitionGroup>
-                            <CSSTransition timeout={700} classNames="slide" key={location.key} unmountOnExit={true}>
+                            <CSSTransition timeout={700} classNames="slide" key={location.pathname} unmountOnExit={true}>
                                 <Switch>
                                     <Route exact path="/" component={HomePage}/>
                                     <Route exact path="/members" component={MemberPage}/>
