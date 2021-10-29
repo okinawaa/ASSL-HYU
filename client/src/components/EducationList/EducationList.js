@@ -19,7 +19,7 @@ function EducationList(props) {
             <MainGridTextContainer>
                 {
                     carrer.map(item=>(
-                        <OneLineContainer>
+                        <OneLineContainer key={item.year}>
                         <div>{item.year}</div>
                         <div>{item.desc}</div>
                         </OneLineContainer>

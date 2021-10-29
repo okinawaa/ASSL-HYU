@@ -95,8 +95,8 @@ function ArticleList({alumni}) {
     return (
         <ArticleListContainer>
             {
-                contents.map(item => (
-                    <ArticleTextContainer key={item.num}>
+                contents.map((item,index) => (
+                    <ArticleTextContainer key={index}>
                         <div>{item.num}</div>
                         <div>{item.desc}</div>
                     </ArticleTextContainer>

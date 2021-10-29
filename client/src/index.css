@@ -60,3 +60,7 @@ code {
     opacity: 1.0;
     transition: opacity 700ms ease-in-out, transform 700ms ease-in-out;
 }
+
+.slide-exit{
+    display: none;
+}

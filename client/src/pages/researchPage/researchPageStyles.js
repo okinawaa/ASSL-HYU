@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ResearchPageContainer = styled.div`
   width: 100%;
+  padding-bottom: 3rem;
   @media screen and (max-width: 500px ) {
   }
 `

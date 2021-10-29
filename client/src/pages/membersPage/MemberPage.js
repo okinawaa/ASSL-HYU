@@ -23,17 +23,8 @@ function MemberPage() {
         {name: "Ye Jin Oh", position: "Ph. D. student", desc: "ohyejin0730@gmail.com", image: YeJinOhImg},
         {name: "Jin Pil Kim", position: "M.S. student", desc: "kimjinpil0649@gmail.com", image: JinPilKimImg},
         {name: "Hye Mi Park", position: "M.S. student", desc: "hyem92@hanyang.ac.kr", image: HyeMiParkImg},
-        {name: "In Chul Park", position: "Undergraduate Student",
-            desc: "qkrdlscjf@hanyang.ac.kr",
-            image: InChulParkImg
-        },
-        {
-            name: "Eun Kyoung Park",
-            position: "Undergraduate Student",
-            desc: "kamj1020@hanyang.ac.kr",
-            image: EunKyoungParkImg
-        },
-
+        {name: "In Chul Park", position: "Undergraduate Student", desc: "qkrdlscjf@hanyang.ac.kr", image: InChulParkImg},
+        {name: "Eun Kyoung Park", position: "Undergraduate Student", desc: "kamj1020@hanyang.ac.kr", image: EunKyoungParkImg},
     ]
     return (
         <div>

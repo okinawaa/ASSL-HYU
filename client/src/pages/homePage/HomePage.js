@@ -13,7 +13,7 @@ function HomePage(props) {
     return (
         <HomeContainer>
             <MainImgContainer>
-                <img src={mainImage}/>
+                <img src={mainImage} alt={mainImage}/>
                 <h1>Advanced Solid State Laser Lab.</h1>
             </MainImgContainer>
             <NavBar/>
