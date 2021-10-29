@@ -2,7 +2,7 @@
   "name": "hyu-assl",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://assllab.github.io/",
+  "homepage": "https://assllab.github.io",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.14.1",
