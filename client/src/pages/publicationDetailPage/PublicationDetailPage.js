@@ -27,7 +27,7 @@ function PublicationDetailPage(props) {
                     }
                     <Link to={"/publication"}>
                         <button>
-                            Go Publication
+                            Back Publication
                         </button>
 
                     </Link>

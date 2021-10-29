@@ -11,12 +11,13 @@ export const ResearchContainer = styled.div`
   margin: 7rem 15vh;
 
 
-  @media screen and (max-width: 500px ) {
+  @media screen and (max-width: 600px ) {
     margin: 2rem 2vh;
   }
 
   img {
-    @media screen and (max-width: 500px ) {
+    width: 49%;
+    @media screen and (max-width: 600px ) {
       width: 100%;
     }
   }

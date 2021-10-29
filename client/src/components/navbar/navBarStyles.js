@@ -23,7 +23,7 @@ export const Nav = styled.nav`
     margin-left: 3rem;
     @media screen and (max-width: 500px) {
       margin:  0 0;
-      width: 70px;
+      width: 110px;
     }
     &:hover {
       transform: scale(1.2);
