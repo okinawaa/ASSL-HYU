@@ -1,5 +1,5 @@
 import React from 'react';
-import {DescContainer, MemberCardContainer} from "./memberCardStyles";
+import {DescContainer, MemberCardContainer } from "./memberCardStyles";
 
 
 function MemberCard({image,position,name,desc}) {
