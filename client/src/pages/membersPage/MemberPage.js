@@ -48,7 +48,7 @@ function MemberPage() {
                         <React.Fragment key={member.name}>
                             <BorderLine/>
                             <MemberCard image={member.image} name={member.name} desc={member.desc}
-                                        position={member.position}/>
+                                        position={member.position} member={"member"}/>
                         </React.Fragment>
                     ))
                 }

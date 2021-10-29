@@ -2,9 +2,9 @@ import React from 'react';
 import {DescContainer, MemberCardContainer } from "./memberCardStyles";
 
 
-function MemberCard({image,position,name,desc}) {
+function MemberCard({image,position,name,desc,member}) {
     return (
-        <MemberCardContainer>
+        <MemberCardContainer member={member}>
             <img src={image} alt={image}/>
             <DescContainer>
                 <span>{position}</span>

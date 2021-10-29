@@ -10,8 +10,8 @@ export const MemberCardContainer = styled.div`
   img{
     border : 2.5px solid #70AD47;
     border-radius: 4px;
-    width: 400px;
-    height: 400px;
+    width: ${props=>props.member ? '300px' : '400px'};
+    height:  ${props=>props.member ? '300px' : '400px'};
     @media screen and (max-width: 500px) {
       width: 300px;
       height: 300px;
