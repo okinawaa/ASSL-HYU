@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const PublicationContainer = styled.div`
+export const NewsContainer = styled.div`
+  
   margin: 7rem 15vh;
   @media screen and (max-width: 900px ) {
     margin: 0 1.8rem;

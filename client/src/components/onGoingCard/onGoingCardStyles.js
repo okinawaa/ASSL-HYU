@@ -1,19 +1,18 @@
 import styled from "styled-components";
 
 
-export const MemberCardContainer = styled.div`
+export const OngoingCardContainer = styled.div`
   margin: 5rem 0;
   display: flex;
-  font-family: "Exo", sans-serif;
-
   @media screen and (max-width: 500px) {
     flex-direction: column;
   }
-  img{
-    border : 2.5px solid #70AD47;
+
+  img {
+    border: 2.5px solid #70AD47;
     border-radius: 4px;
-    width: ${props=>props.member ? '300px' : '400px'};
-    height:  ${props=>props.member ? '300px' : '400px'};
+    width: 300px;
+    height: 300px;
     @media screen and (max-width: 500px) {
       width: 300px;
       height: 300px;
@@ -22,29 +21,33 @@ export const MemberCardContainer = styled.div`
   }
 `
 
-export const DescContainer = styled.div`
+export const OngoingDescContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 5rem;
+  font-family: "Exo", sans-serif;
 
   @media screen and (max-width: 500px) {
     margin: 0 auto;
   }
-  span{
+
+  span {
     font-size: 1.5rem;
     font-weight: 800;
     margin: 1rem 0;
     @media screen and (max-width: 500px) {
-     text-align: center;
+      text-align: center;
     }
   }
 
-  span:first-of-type{
+  span:first-of-type {
     margin: 0 0;
   }
-  p{
+
+  p {
+    margin-top: 30px;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 500;
     @media screen and (max-width: 500px) {
       text-align: center;
     }

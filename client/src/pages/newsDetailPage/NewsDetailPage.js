@@ -1,19 +1,24 @@
 import React from 'react';
-import {DescContainer, ImgContainer, ImgSetContainer, PublicationDetailContainer} from "./publicationDetailPageStyles";
+import {DescContainer, ImgContainer, ImgSetContainer, NewsDetailContainer} from "./newsDetailPageStyles";
 import NavBar from "../../components/navbar/NavBar";
 import {Link, useParams} from "react-router-dom";
 import {notices} from "../../notice/notice";
 import Title from "../../components/title/Title";
+import {publications} from "../../publications/publications";
 
-function PublicationDetailPage(props) {
+function NewsDetailPage(props) {
     const {title} = useParams()
-
-    const notice = notices.filter(item => item.title === title)
+    let currentCategory = "news"
+    let notice = notices.filter(item => item.title === title)
+    if (notice.length === 0) {
+        currentCategory = "publication"
+        notice = publications.filter(item => item.title === title)
+    }
     return (
         <div>
             <NavBar normal={"normal"}/>
 
-            <PublicationDetailContainer>
+            <NewsDetailContainer>
                 <Title title={notice[0].title}/>
                 <DescContainer>
                     {notice[0].desc}
@@ -25,17 +30,17 @@ function PublicationDetailPage(props) {
                         ))
 
                     }
-                    <Link to={"/publication"}>
+                    <Link to={currentCategory === "news" ? "/news" : "/publication"}>
                         <button>
-                            Back Publication
+                            Back {currentCategory}
                         </button>
 
                     </Link>
                 </ImgSetContainer>
 
-            </PublicationDetailContainer>
+            </NewsDetailContainer>
         </div>
     );
 }
 
-export default PublicationDetailPage;
+export default NewsDetailPage;

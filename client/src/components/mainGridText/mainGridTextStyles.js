@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainGridTextContainer = styled.div`
   width: 100%;
-  margin: 0 auto;
+  margin: 25px auto;
  
   & > div {
     color: #656565;

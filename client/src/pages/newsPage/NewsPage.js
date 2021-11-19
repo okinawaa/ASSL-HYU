@@ -1,11 +1,11 @@
 import React from 'react';
 import NavBar from "../../components/navbar/NavBar";
+import {NewsContainer} from "./newsPageStyles";
 import { Table, Tag} from "antd";
 import 'antd/dist/antd.css';
 import {Link} from "react-router-dom";
-import {NewsContainer} from "../newsPage/newsPageStyles";
+import {notices} from "../../notice/notice";
 import Title from "../../components/title/Title";
-import {publications} from "../../publications/publications";
 
 const columns = [
     {
@@ -53,7 +53,7 @@ const columns = [
 
 
 
-function PublicationPage(props) {
+function NewsPage(props) {
 
 
 
@@ -64,8 +64,8 @@ function PublicationPage(props) {
         <div>
             <NavBar normal={"normal"}/>
             <NewsContainer>
-                <Title title={"Publication"}/>
-                <Table columns={columns} dataSource={publications}/>
+                <Title title={"연구실 소식"}/>
+                <Table columns={columns} dataSource={notices}/>
             </NewsContainer>
 
 
@@ -74,4 +74,4 @@ function PublicationPage(props) {
     );
 }
 
-export default PublicationPage;
+export default NewsPage;

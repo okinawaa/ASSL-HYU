@@ -2,10 +2,12 @@ import {Route, Switch, Redirect} from "react-router-dom";
 import HomePage from "./pages/homePage/HomePage";
 import MemberPage from "./pages/membersPage/MemberPage";
 import ResearchPage from "./pages/researchPage/ResearchPage";
-import PublicationPage from "./pages/publicationPage/PublicationPage";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
-import PublicationDetailPage from "./pages/publicationDetailPage/PublicationDetailPage";
 import ScrollToTop from "./utils/ScrollToTop";
+import NewsPage from "./pages/newsPage/NewsPage";
+import NewsDetailPage from "./pages/newsDetailPage/NewsDetailPage";
+import OngoingResearchPage from "./pages/researchPage/OngoingResearchPage";
+import PublicationPage from "./pages/publicationPage/PublicationPage";
 
 function App() {
     return (
@@ -20,8 +22,10 @@ function App() {
                                     <Route exact path="/" component={HomePage}/>
                                     <Route exact path="/members" component={MemberPage}/>
                                     <Route exact path="/research" component={ResearchPage}/>
+                                    <Route exact path="/news" component={NewsPage}/>
                                     <Route exact path="/publication" component={PublicationPage}/>
-                                    <Route exact path="/:title" component={PublicationDetailPage}/>
+                                    <Route exact path="/ongoingResearch" component={OngoingResearchPage}/>
+                                    <Route exact path="/news/:title" component={NewsDetailPage}/>
                                     <Redirect from="*" to="/"/>
                                 </Switch>
                             </CSSTransition>

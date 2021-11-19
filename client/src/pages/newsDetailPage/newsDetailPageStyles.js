@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PublicationDetailContainer = styled.div`
+export const NewsDetailContainer = styled.div`
   padding-bottom: 3rem;
   margin: 7rem 15vh;
   @media screen and (max-width: 900px ) {

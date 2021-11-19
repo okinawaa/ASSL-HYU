@@ -41,6 +41,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   justify-content: space-evenly;
+
 `
 
 export const NavLogo = styled(Link)`
@@ -65,4 +66,33 @@ export const NavLogo = styled(Link)`
 `;
 
 
+export const ResearchLogoContainer = styled.div`
+  position: absolute;
+`
+
+export const SubNavContainer = styled.div`
+  transition: 0.8s all ease-in-out;
+`
+
+export const SubLogo = styled(Link)`
+  margin-top: 0.2rem;
+  color: #7F7F7F;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 0px 0px #ffffff, 0px 0px 0px #dad7d7;
+  transition: 0.3s ease-in-out;
+  margin-right: 10px;
+  @media screen and (max-width: 500px) {
+    font-size: 1.2rem;
+  }
+
+
+  &:hover {
+    color: #151414;
+    font-size: 1.1rem;
+  }
+
+`
 
