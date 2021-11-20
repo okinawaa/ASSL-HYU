@@ -4,5 +4,9 @@
 - react-transition-group 을 통한 페이지간 **animation**
 - Styled-components 를 사용한 재사용가능한 component 제작
 
+
+### Update log
+2021-11-19 `research` page division
+
 [사이트바로가기](https://assllab.github.io/)
 
