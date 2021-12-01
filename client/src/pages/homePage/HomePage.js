@@ -29,8 +29,8 @@ function HomePage(props) {
                 </p>
                 <MainGridImage/>
                 <BorderLine/>
-                <Title title={"RECENT HIGHLIGHTS"}/>
-                <MainGridImage member={"member"}/>
+                {/*<Title title={"RECENT HIGHLIGHTS"}/>*/}
+                {/*<MainGridImage member={"member"}/>*/}
                 <BorderLine/>
                 <Title title={"RESEARCH IN THE ASSL LABS IS SUPPORTED BY"}/>
                 <MainGridText/>

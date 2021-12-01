@@ -21,8 +21,6 @@ const firstMarkdown = `
 동시에 발진시킬 수 있어 출력 레이저빔 모양 조절이 가능한 레이저 시스템
 
 ◽ 세계 최초로 본 연구실에서 연구, 개발하고 구현함
-
-◽ 국제 SCI 저널 논문 4편 출판, 국제 학회 초청 발표 2회, 국내 특허 등록 및 국제 특허 출원 완료
 \`\`\`
 > ![image](https://user-images.githubusercontent.com/93359212/139467456-c5a7b5e8-e7a0-4588-ae6e-e1d053c2a2c8.png)
 > ![image](https://user-images.githubusercontent.com/93359212/139467497-1e936428-81f5-4a5f-bbc8-08ead8322d7e.png)
@@ -124,13 +122,13 @@ function ResearchPage() {
                     </ReactMarkdown>
                 </MarkDownStyle>
 
-                <Title title={"주요 연구 활동 및 실적"}/>
-                <MarkDownStyle>
-                    <ReactMarkdown
-                    >
-                        {secondMarkdown}
-                    </ReactMarkdown>
-                </MarkDownStyle>
+                {/*<Title title={"주요 연구 활동 및 실적"}/>*/}
+                {/*<MarkDownStyle>*/}
+                {/*    <ReactMarkdown*/}
+                {/*    >*/}
+                {/*        {secondMarkdown}*/}
+                {/*    </ReactMarkdown>*/}
+                {/*</MarkDownStyle>*/}
 
             </ResearchContainer>
         </ResearchPageContainer>

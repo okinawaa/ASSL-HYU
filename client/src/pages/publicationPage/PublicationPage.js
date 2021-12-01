@@ -9,25 +9,31 @@ import {publications} from "../../publications/publications";
 
 const columns = [
     {
-        title: '날짜',
+        title: '출판년도',
         dataIndex: 'date',
         key: 'date',
     },
+    {
+        title: '저자',
+        dataIndex: 'author',
+        key: 'author',
+        render: text => <span>{text}</span>
+    },
 
     {
-        title: '제목',
+        title: '논문제목',
         dataIndex: 'title',
         key: 'title',
         render: text => <Link to={`/news/${text}`}>{text}</Link>
     },
     {
-        title: '태그',
-        key: 'tags',
-        dataIndex: 'tags',
-        render: tags => (
+        title: '저널',
+        key: 'journals',
+        dataIndex: 'journals',
+        render: journals => (
             <>
-                {tags.map(tag => {
-                    let color = tag.length > 5 ? 'geekblue' : 'green';
+                {journals.map(tag => {
+                    let color = tag.length > 2   ? 'geekblue' : 'green';
                     if (tag === 'loser') {
                         color = 'volcano';
                     }
