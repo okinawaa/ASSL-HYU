@@ -8,5 +8,8 @@
 ### Update log
 2021-11-19 `research` page division
 
+### TODO
+[] for mobile device navbar 
+
 [사이트바로가기](https://assllab.github.io/)
 
