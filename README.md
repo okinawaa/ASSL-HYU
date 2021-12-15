@@ -10,6 +10,7 @@
 
 ### TODO
 [ ] for mobile device navbar 
+[ ] add footer
 
 [사이트바로가기](https://assllab.github.io/)
 
