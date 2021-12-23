@@ -11,6 +11,7 @@
 ### TODO
 [ ] for mobile device navbar 
 [ ] add footer
+[ ] post study stuff
 
 [사이트바로가기](https://assllab.github.io/)
 
