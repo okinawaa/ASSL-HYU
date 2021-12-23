@@ -1,6 +1,6 @@
-import dummy1 from './images/dummy1.jpg'
-import dummy2 from './images/dummy2.jpg'
-import dummy3 from './images/dummy3.jpg'
+import dummy1 from './noticeImages/dummy1.jpg'
+import dummy2 from './noticeImages/dummy2.jpg'
+import dummy3 from './noticeImages/dummy3.jpg'
 
 export let notices = [
     {
