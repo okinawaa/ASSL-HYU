@@ -31,23 +31,23 @@ export const ImgSetContainer = styled.div`
     }
     
   }
-
-  button {
-    width: 100%;
-    height: 100%;
-    font-size: 1.5rem;
-    color: black;
-    border-radius: 4px;
-    border: 3px solid #70AD47;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-    font-weight: bold;
-    background-color: white;
-
-    &:hover {
-      background-color: #e0e0e0;
-      border: 3px solid #ace588;
-    }
+  //
+  //button {
+  //  width: 100%;
+  //  height: 100%;
+  //  font-size: 1.5rem;
+  //  color: black;
+  //  border-radius: 4px;
+  //  border: 3px solid #70AD47;
+  //  cursor: pointer;
+  //  transition: 0.5s ease-in-out;
+  //  font-weight: bold;
+  //  background-color: white;
+  //
+  //  &:hover {
+  //    background-color: #e0e0e0;
+  //    border: 3px solid #ace588;
+  //  }
 
 
     @media screen and (max-width: 1180px ) {

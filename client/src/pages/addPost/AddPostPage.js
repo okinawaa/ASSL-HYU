@@ -1,17 +1,22 @@
 import React, {useState} from 'react';
 import NavBar from "../../components/navbar/NavBar";
-import {AddPublicationPageContainer} from "./addPublicationPageStyles";
+import {AddPublicationPageContainer} from "./addPostPageStyles";
 import {Button} from "antd";
 import {addDoc, collection} from "@firebase/firestore";
 import {db} from "../../firebase-config";
+import {Select} from "antd";
 
-function AddPublicationPage({history}) {
+const {Option} = Select;
+
+function AddPostPage({history}) {
     const [author, setAuthor] = useState("");
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [journals, setJournals] = useState("");
+    const [tag, setTag] = useState("");
     const [sent, setSent] = useState(false);
-    const [disabled,setDisabled] = useState(false);
+    const [disabled, setDisabled] = useState(false);
+    const [category, setCategory] = useState("publication")
 
     const handleChangeInput = (e) => {
         const {name, value} = e.target;
@@ -28,11 +33,17 @@ function AddPublicationPage({history}) {
             case "journals":
                 setJournals(value);
                 break;
+            case "tag":
+                setTag(value);
+                break;
             default:
                 return;
         }
     };
-    const publicationCollectionRef = collection(db, "publication")
+
+    const handleCategoryChange = (value) => {
+        setCategory(value);
+    };
 
     const formSubmit = async () => {
         const current = new Date();
@@ -41,24 +52,48 @@ function AddPublicationPage({history}) {
         const date = current.getDate();
         let today = year + "-" + month + "-" + date;
         setDisabled(true)
-        await addDoc(publicationCollectionRef,{author,title,desc,journals,date:today})
+        const CollectionRef = collection(db, category)
+
+        if (category === "publication") {
+            await addDoc(CollectionRef, {author, title, desc, journals, date: today})
+        } else {
+            await addDoc(CollectionRef, {title, tag, desc, date: today})
+        }
+
         setSent(true)
 
-        setTimeout(()=>{
-            history.push('/publication')
-        },1000)
+
+        setTimeout(() => {
+            if (category === "publication") {
+                history.push('/publication')
+            } else {
+                history.push('/news')
+            }
+        }, 1000)
+
     }
     return (
         <>
             <NavBar/>
             <AddPublicationPageContainer>
+
                 <div className={"contact-section"}>
+                    <Select
+                        defaultValue="publication"
+                        style={{width: 200}}
+                        name="tag"
+                        onChange={handleCategoryChange}
+                    >
+                        <Option value="publication">publication</Option>
+                        <Option value="news">news</Option>
+
+                    </Select>
                     <div className="left-content">
                         <div className="contact-title">
-                            <h4>PUBLICATION 글작성</h4>
+                            <h4>{category} 글작성</h4>
                         </div>
                         <form className="form" onSubmit={formSubmit}>
-                            <div className="form-field">
+                            {category === "publication" && <div className="form-field">
                                 <label htmlFor="author">저자</label>
                                 <input
                                     type="text"
@@ -67,7 +102,7 @@ function AddPublicationPage({history}) {
                                     value={author}
                                     onChange={handleChangeInput}
                                 />
-                            </div>
+                            </div>}
 
                             <div className="form-field">
                                 <label htmlFor="title">제목</label>
@@ -79,16 +114,30 @@ function AddPublicationPage({history}) {
                                     onChange={handleChangeInput}
                                 />
                             </div>
-                            <div className="form-field">
-                                <label htmlFor="journals">저널</label>
-                                <input
-                                    type="text"
-                                    name="journals"
-                                    id="journals"
-                                    value={journals}
-                                    onChange={handleChangeInput}
-                                />
-                            </div>
+                            {
+
+                                category === "publication" ?
+                                    <div className="form-field">
+                                        <label htmlFor="journals">저널</label>
+                                        <input
+                                            type="text"
+                                            name="journals"
+                                            id="journals"
+                                            value={journals}
+                                            onChange={handleChangeInput}
+                                        />
+                                    </div> :
+                                    <div className="form-field">
+                                        <label htmlFor="tag">태그</label>
+                                        <input
+                                            type="text"
+                                            name="tag"
+                                            id="tag"
+                                            value={tag}
+                                            onChange={handleChangeInput}
+                                        />
+                                    </div>
+                            }
                             <div className="form-field">
                                 <label htmlFor="text-area">글 내용작성</label>
                                 <textarea
@@ -119,4 +168,4 @@ function AddPublicationPage({history}) {
     );
 }
 
-export default AddPublicationPage;
+export default AddPostPage;

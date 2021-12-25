@@ -15,7 +15,7 @@ export let notices = [
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
             , and more recently with desktop publishing software like Aldus
              PageMaker including versions of Lorem Ipsum.`,
-        tags: ['공지사항'],
+        tag: '공지사항',
         images:[dummy1,dummy2,dummy3]
     },
     {
@@ -30,7 +30,7 @@ export let notices = [
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
             , and more recently with desktop publishing software like Aldus
              PageMaker including versions of Lorem Ipsum.`,
-        tags: ['연구개발소식'],
+        tag: '연구개발소식',
     },
     {
         key: '3',
@@ -44,7 +44,7 @@ export let notices = [
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
             , and more recently with desktop publishing software like Aldus
              PageMaker including versions of Lorem Ipsum.`,
-        tags: ['경조사'],
+        tag: '경조사',
     }
 
 ].reverse();
