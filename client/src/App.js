@@ -8,6 +8,8 @@ import NewsPage from "./pages/newsPage/NewsPage";
 import NewsDetailPage from "./pages/newsDetailPage/NewsDetailPage";
 import OngoingResearchPage from "./pages/researchPage/OngoingResearchPage";
 import PublicationPage from "./pages/publicationPage/PublicationPage";
+import PublicationDetailPage from "./pages/publicationDetailPage/PublicationDetailPage";
+import AddPublicationPage from "./pages/addPublicationPage/AddPublicationPage";
 
 function App() {
     return (
@@ -26,6 +28,8 @@ function App() {
                                     <Route exact path="/publication" component={PublicationPage}/>
                                     <Route exact path="/ongoingResearch" component={OngoingResearchPage}/>
                                     <Route exact path="/news/:title" component={NewsDetailPage}/>
+                                    <Route exact path="/publication/:title" component={PublicationDetailPage}/>
+                                    <Route exact path="/addPublication/" component={AddPublicationPage}/>
                                     <Redirect from="*" to="/"/>
                                 </Switch>
                             </CSSTransition>

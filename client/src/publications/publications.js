@@ -18,7 +18,7 @@ export let publications = [
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
             , and more recently with desktop publishing software like Aldus
              PageMaker including versions of Lorem Ipsum.`,
-        journals: ['신문'],
+        journals: '신문',
         images: [timeImage, timeImage, timeImage]
     },
     {
@@ -34,7 +34,7 @@ export let publications = [
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
             , and more recently with desktop publishing software like Aldus
              PageMaker including versions of Lorem Ipsum.`,
-        journals: ['학회지'],
+        journals: '학회지',
     },
     {
         key: '3',
@@ -42,7 +42,7 @@ export let publications = [
         author: '김혜림',
         title: '글 작성 Guide 자료 만들고 있습니다. ',
         desc: `이 부분이 본문이 들어갈 자리입니다. 실제 이 글 자체도 본문으로 사용됩니다.`,
-        journals: ['논문'],
+        journals: '논문'
     },
     {
         key: '4',
@@ -50,7 +50,7 @@ export let publications = [
         author: '붕어빵',
         title: '이 글은 이미지를 위한 테스트입니다',
         desc: '이 부분은 글의 본문인데 이미지가 이 본문 아래로 들어갈거에요',
-        journals: ['이미지'],
+        journals: '이미지',
         images: [num1, num2, num3]
     }
 
