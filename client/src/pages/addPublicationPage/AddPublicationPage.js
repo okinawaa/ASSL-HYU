@@ -11,6 +11,7 @@ function AddPublicationPage({history}) {
     const [desc, setDesc] = useState("");
     const [journals, setJournals] = useState("");
     const [sent, setSent] = useState(false);
+    const [disabled,setDisabled] = useState(false);
 
     const handleChangeInput = (e) => {
         const {name, value} = e.target;
@@ -39,7 +40,7 @@ function AddPublicationPage({history}) {
         const month = current.getMonth() + 1;
         const date = current.getDate();
         let today = year + "-" + month + "-" + date;
-
+        setDisabled(true)
         await addDoc(publicationCollectionRef,{author,title,desc,journals,date:today})
         setSent(true)
 
@@ -106,7 +107,7 @@ function AddPublicationPage({history}) {
                                 </div>
                             ) : (
                                 <div className="form-field f-button" onClick={formSubmit}>
-                                    <Button>게시글 등록</Button>
+                                    <Button disabled={disabled}>게시글 등록</Button>
 
                                 </div>
                             )}
