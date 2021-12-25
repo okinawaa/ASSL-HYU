@@ -7,11 +7,10 @@
 
 ### Update log
 2021-11-19 `research` page division
+2021-12-24 게시글 작성법 pdf 작성
 
-### TODO
-[ ] for mobile device navbar 
-[ ] add footer
-[ ] post study stuff
+2021-12-25 firebase 도입 게시글 작성 automation ( 기존의 수동 게시글 작성방법을 개선 )
+
 
 [사이트바로가기](https://assllab.github.io/)
 
