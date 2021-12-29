@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 import {Link} from "react-router-dom";
 import {NewsContainer} from "../newsPage/newsPageStyles";
 import Title from "../../components/title/Title";
-import {collection, deleteDoc, doc, getDocs} from "@firebase/firestore";
+import {collection, deleteDoc, doc, getDocs, orderBy, query} from "@firebase/firestore";
 import {db} from "../../firebase-config";
 
 
@@ -63,7 +63,8 @@ function PublicationPage(props) {
         const publicationDoc = doc(db, "publication", id);
         await deleteDoc(publicationDoc);
         const getPublications = async () => {
-            const data = await getDocs(publicationCollectionRef);
+            const q = await query(publicationCollectionRef,orderBy("date","desc"))
+            const data = await getDocs(q);
             setPublications(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
         }
         getPublications();
@@ -71,9 +72,9 @@ function PublicationPage(props) {
 
     useEffect(() => {
         const getPublications = async () => {
-            const data = await getDocs(publicationCollectionRef);
+            const q = await query(publicationCollectionRef,orderBy("date","desc"))
+            const data = await getDocs(q);
             setPublications(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
-
         }
         getPublications();
     }, [])

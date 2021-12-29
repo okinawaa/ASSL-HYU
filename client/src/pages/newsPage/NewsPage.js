@@ -5,7 +5,7 @@ import {Button, Table, Tag} from "antd";
 import 'antd/dist/antd.css';
 import {Link} from "react-router-dom";
 import Title from "../../components/title/Title";
-import {collection, deleteDoc, doc, getDocs} from "@firebase/firestore";
+import {collection, deleteDoc, doc, getDocs, orderBy, query} from "@firebase/firestore";
 import {db} from "../../firebase-config";
 
 
@@ -57,14 +57,16 @@ function NewsPage(props) {
         const newsDoc = doc(db, "news", id);
         await deleteDoc(newsDoc);
         const getNews = async () => {
-            const data = await getDocs(newsCollectionRef);
+            const q = await query(newsCollectionRef,orderBy("date","desc"))
+            const data = await getDocs(q);
             setNews(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
         }
         getNews();
     }
     useEffect(() => {
         const getNews = async () => {
-            const data = await getDocs(newsCollectionRef);
+            const q = await query(newsCollectionRef,orderBy("date","desc"))
+            const data = await getDocs(q);
             setNews(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
         }
         getNews();
