@@ -15,6 +15,8 @@
 
 2021-12-25 firebase 도입 게시글 작성 automation ( 기존의 수동 게시글 작성방법을 개선 ) [새로운PDF](stuff/ASSL_NEW_STUFF.pdf)
 
+2021-12-29 Publication page 에서 출판년도를 설정해야하므로 antd 의 datepicker 를 이용하였고 moment library 를 사용하여 출판년도 설정가능하게 수정
+
 
 ## 회고
 
