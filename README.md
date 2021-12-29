@@ -17,6 +17,8 @@
 
 2021-12-29 Publication page 에서 출판년도를 설정해야하므로 antd 의 datepicker 를 이용하였고 moment library 를 사용하여 출판년도 설정가능하게 수정
 
+2021-12-29 publication page & news page 출판년도 및 게시글 최신순으로 정렬
+
 
 ## 회고
 
