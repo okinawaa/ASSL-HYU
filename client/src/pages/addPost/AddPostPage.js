@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import NavBar from "../../components/navbar/NavBar";
 import {AddPublicationPageContainer} from "./addPostPageStyles";
-import {Button} from "antd";
+import {Button, DatePicker} from "antd";
 import {addDoc, collection} from "@firebase/firestore";
 import {db} from "../../firebase-config";
 import {Select} from "antd";
+import moment from "moment";
 
 const {Option} = Select;
 
@@ -17,6 +18,10 @@ function AddPostPage({history}) {
     const [sent, setSent] = useState(false);
     const [disabled, setDisabled] = useState(false);
     const [category, setCategory] = useState("publication")
+    const [publicationDate, setPublicationDate] = useState(moment())
+
+    const dateFormat = 'YYYY-MM-DD';
+
 
     const handleChangeInput = (e) => {
         const {name, value} = e.target;
@@ -55,7 +60,7 @@ function AddPostPage({history}) {
         const CollectionRef = collection(db, category)
 
         if (category === "publication") {
-            await addDoc(CollectionRef, {author, title, desc, journals, date: today})
+            await addDoc(CollectionRef, {author, title, desc, journals, date: publicationDate})
         } else {
             await addDoc(CollectionRef, {title, tag, desc, date: today})
         }
@@ -92,8 +97,19 @@ function AddPostPage({history}) {
                         <div className="contact-title">
                             <h4>{category} 글작성</h4>
                         </div>
+                        {category === "publication" && <> 출판년도 ✌
+                            <DatePicker defaultValue={moment(moment(), dateFormat)} format={dateFormat}
+                            onChange={(value) => {
+                            const dateValue = value.toDate();
+                            const year = dateValue.getFullYear();
+                            const month = dateValue.getMonth() + 1;
+                            const date = dateValue.getDate();
+                            setPublicationDate(`${year}-${month >= 10 ? month : '0' + month}-${date >= 10 ? date : '0' + date}`)
+                        }}/>
+                        </>}
                         <form className="form" onSubmit={formSubmit}>
                             {category === "publication" && <div className="form-field">
+
                                 <label htmlFor="author">저자</label>
                                 <input
                                     type="text"
