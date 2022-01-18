@@ -18,9 +18,9 @@ function AddPostPage({history}) {
     const [sent, setSent] = useState(false);
     const [disabled, setDisabled] = useState(false);
     const [category, setCategory] = useState("publication")
-    const [publicationDate, setPublicationDate] = useState(moment())
-
     const dateFormat = 'YYYY-MM-DD';
+    const [publicationDate, setPublicationDate] = useState(moment().format(dateFormat))
+
 
 
     const handleChangeInput = (e) => {
@@ -99,13 +99,13 @@ function AddPostPage({history}) {
                         </div>
                         {category === "publication" && <> 출판년도 ✌
                             <DatePicker defaultValue={moment(moment(), dateFormat)} format={dateFormat}
-                            onChange={(value) => {
-                            const dateValue = value.toDate();
-                            const year = dateValue.getFullYear();
-                            const month = dateValue.getMonth() + 1;
-                            const date = dateValue.getDate();
-                            setPublicationDate(`${year}-${month >= 10 ? month : '0' + month}-${date >= 10 ? date : '0' + date}`)
-                        }}/>
+                                        onChange={(value) => {
+                                            const dateValue = value.toDate();
+                                            const year = dateValue.getFullYear();
+                                            const month = dateValue.getMonth() + 1;
+                                            const date = dateValue.getDate();
+                                            setPublicationDate(`${year}-${month >= 10 ? month : '0' + month}-${date >= 10 ? date : '0' + date}`)
+                                        }}/>
                         </>}
                         <form className="form" onSubmit={formSubmit}>
                             {category === "publication" && <div className="form-field">
