@@ -10,6 +10,7 @@ import PublicationPage from "./pages/publicationPage/PublicationPage";
 import PostDetailPage from "./pages/postDetailPage/PostDetailPage";
 import AddPostPage from "./pages/addPost/AddPostPage";
 import AdminLoginPage from "./pages/adminLoginPage/AdminLoginPage";
+import ModifyPostPage from "./pages/modifyPost/ModifyPostPage";
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                                     <Route exact path="/ongoingResearch" component={OngoingResearchPage}/>
                                     <Route exact path="/post/:id" component={PostDetailPage}/>
                                     <Route exact path="/addPublication/" component={AddPostPage}/>
+                                    <Route exact path="/modifyPublication/:id" component={ModifyPostPage}/>
                                     <Redirect from="*" to="/"/>
                                 </Switch>
                             </CSSTransition>

@@ -14,9 +14,10 @@ export const NewsDetailContainer = styled.div`
 export const DescContainer = styled.p`
   font-size: 1.3rem;
   font-weight: 400;
+  white-space: pre-wrap;
 `
 
-export const ImgSetContainer = styled.div`
+export const ImgSetContainer = styled.p`
   display: flex;
   flex-direction: column;
   align-items: center;
