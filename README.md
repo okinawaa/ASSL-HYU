@@ -21,6 +21,8 @@
 
 2022-01-18 add publication 에서 moment library 를 사용하는데 형식에 오류가 있어서 해결 (useState 의 default 값을 세팅)
 
+2022-02-24 게시글 수정기능 추가 & 게시글에 개행 문자 
+
 
 
 ## 회고
