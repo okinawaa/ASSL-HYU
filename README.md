@@ -19,6 +19,9 @@
 
 2021-12-29 publication page & news page 출판년도 및 게시글 최신순으로 정렬
 
+2022-01-18 add publication 에서 moment library 를 사용하는데 형식에 오류가 있어서 해결 (useState 의 default 값을 세팅)
+
+
 
 ## 회고
 
