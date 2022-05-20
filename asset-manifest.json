@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.885052a0.chunk.css",
-    "main.js": "/static/js/main.932d99cb.chunk.js",
-    "main.js.map": "/static/js/main.932d99cb.chunk.js.map",
+    "main.js": "/static/js/main.58d50652.chunk.js",
+    "main.js.map": "/static/js/main.58d50652.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9ecd7852.js",
     "runtime-main.js.map": "/static/js/runtime-main.9ecd7852.js.map",
     "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
@@ -12,13 +12,12 @@
     "static/css/2.a95be28f.chunk.css.map": "/static/css/2.a95be28f.chunk.css.map",
     "static/css/main.885052a0.chunk.css.map": "/static/css/main.885052a0.chunk.css.map",
     "static/js/2.6eae212b.chunk.js.LICENSE.txt": "/static/js/2.6eae212b.chunk.js.LICENSE.txt",
-    "static/media/EunJiPark.3f3e4f99.jpg": "/static/media/EunJiPark.3f3e4f99.jpg",
     "static/media/EunKyoungPark.66ed6443.png": "/static/media/EunKyoungPark.66ed6443.png",
     "static/media/HoonJung.6bd997fb.jpg": "/static/media/HoonJung.6bd997fb.jpg",
     "static/media/HyeMiPark.56fa7253.png": "/static/media/HyeMiPark.56fa7253.png",
     "static/media/InChulPark.f05704b0.png": "/static/media/InChulPark.f05704b0.png",
-    "static/media/JinPilKim.70f524c5.png": "/static/media/JinPilKim.70f524c5.png",
     "static/media/JongSeonPark.c3f4983c.jpg": "/static/media/JongSeonPark.c3f4983c.jpg",
+    "static/media/Shinjuyong.6af4979f.jpg": "/static/media/Shinjuyong.6af4979f.jpg",
     "static/media/YeJinOh.3ab932f2.png": "/static/media/YeJinOh.3ab932f2.png",
     "static/media/logo.1d473a9c.png": "/static/media/logo.1d473a9c.png",
     "static/media/main1.64249b65.jpg": "/static/media/main1.64249b65.jpg",
@@ -42,6 +41,6 @@
     "static/css/2.a95be28f.chunk.css",
     "static/js/2.6eae212b.chunk.js",
     "static/css/main.885052a0.chunk.css",
-    "static/js/main.932d99cb.chunk.js"
+    "static/js/main.58d50652.chunk.js"
   ]
 }
