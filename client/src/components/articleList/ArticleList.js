@@ -39,18 +39,30 @@ function ArticleList({alumni}) {
             {
                 num: "◾",
                 desc: "Jung Sub Lee, EO technics"
-            },{
+            },
+            {
                 num: "◾",
                 desc: "Jae Hoon Lee, Hanhwa"
-            },{
+            },
+            {
                 num: "◾",
                 desc: "Jin Hoo Lee, Lutronic"
-            },{
+            },
+            {
                 num: "◾",
                 desc: "Ye Ji Jung, Hanhwa"
-            },{
+            },
+            {
                 num: "◾",
                 desc: "Sang Min Ann, go abroad"
+            },
+            {
+                num: "◾",
+                desc: "Eun Ji Park, LIG"
+            },
+            {
+                num: "◾",
+                desc: "Jin Pil Kim, EO techincs"
             }
         ]
     }else{
