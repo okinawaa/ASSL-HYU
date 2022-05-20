@@ -8,10 +8,8 @@ import EducationList from "../../components/EducationList/EducationList";
 import ArticleList from "../../components/articleList/ArticleList";
 import BorderLine from "../../components/borderLine/borderLine";
 import hoonJungImg from "../../images/membersPage/HoonJung.jpg"
-import EunJiParkImg from "../../images/membersPage/EunJiPark.jpg"
 import JongSeonParkImg from "../../images/membersPage/JongSeonPark.jpg"
 import YeJinOhImg from "../../images/membersPage/YeJinOh.png"
-import JinPilKimImg from "../../images/membersPage/JinPilKim.png"
 import HyeMiParkImg from "../../images/membersPage/HyeMiPark.png"
 import InChulParkImg from "../../images/membersPage/InChulPark.png"
 import EunKyoungParkImg from "../../images/membersPage/EunKyoungPark.png"
@@ -20,15 +18,12 @@ import ShinJuYongImg from "../../images/membersPage/Shinjuyong.jpg"
 
 function MemberPage() {
     const members = [
-        {name: "Eun Ji Park", position: "Ph. D. student", desc: "pj2033◾gmail.com", image: EunJiParkImg},
-        {name: "Jong Seon Park", position: "Ph. D. student", desc: "jonsn◾gmail.com", image: JongSeonParkImg},
+        {name: "Jong Seon Park", position: "Ph. D. student", desc: "jonsn.park◾gmail.com", image: JongSeonParkImg},
         {name: "Ye Jin Oh", position: "Ph. D. student", desc: "ohyejin0730◾gmail.com", image: YeJinOhImg},
-        {name: "Jin Pil Kim", position: "M.S. student", desc: "kimjinpil0649◾gmail.com", image: JinPilKimImg},
         {name: "Hye Mi Park", position: "M.S. student", desc: "hyem92◾hanyang.ac.kr", image: HyeMiParkImg},
-        {name: "In Chul Park", position: "Undergraduate Student", desc: "qkrdlscjf◾hanyang.ac.kr", image: InChulParkImg},
-        {name: "Eun Kyoung Park", position: "Undergraduate Student", desc: "kamj1020◾hanyang.ac.kr", image: EunKyoungParkImg},
+        {name: "In Chul Park", position: "M.S. student", desc: "parkinchul601◾gmail.com", image: InChulParkImg},
+        {name: "Eun Kyoung Park", position: "M.S. student", desc: "eunkyoung120◾hanyang.ac.kr", image: EunKyoungParkImg},
         {name: "Ju Yong Shin", position: "Undergraduate Student", desc: "balance0415◾hanyang.ac.kr", image: ShinJuYongImg},
-
     ]
     return (
         <div>
