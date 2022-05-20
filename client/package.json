@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages --repo https://github.com/assllab/assllab.github.io -d build"
   },
   "eslintConfig": {
     "extends": [
