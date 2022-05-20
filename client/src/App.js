@@ -13,6 +13,7 @@ import AdminLoginPage from "./pages/adminLoginPage/AdminLoginPage";
 import ModifyPostPage from "./pages/modifyPost/ModifyPostPage";
 
 function App() {
+    console.log("test");
     return (
         <div>
             <ScrollToTop/>
