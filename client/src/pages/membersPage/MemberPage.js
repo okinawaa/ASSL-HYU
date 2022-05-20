@@ -15,6 +15,8 @@ import JinPilKimImg from "../../images/membersPage/JinPilKim.png"
 import HyeMiParkImg from "../../images/membersPage/HyeMiPark.png"
 import InChulParkImg from "../../images/membersPage/InChulPark.png"
 import EunKyoungParkImg from "../../images/membersPage/EunKyoungPark.png"
+import ShinJuYongImg from "../../images/membersPage/Shinjuyong.jpg"
+
 
 function MemberPage() {
     const members = [
@@ -25,7 +27,8 @@ function MemberPage() {
         {name: "Hye Mi Park", position: "M.S. student", desc: "hyem92◾hanyang.ac.kr", image: HyeMiParkImg},
         {name: "In Chul Park", position: "Undergraduate Student", desc: "qkrdlscjf◾hanyang.ac.kr", image: InChulParkImg},
         {name: "Eun Kyoung Park", position: "Undergraduate Student", desc: "kamj1020◾hanyang.ac.kr", image: EunKyoungParkImg},
-        
+        {name: "Ju Yong Shin", position: "Undergraduate Student", desc: "balance0415◾hanyang.ac.kr", image: ShinJuYongImg},
+
     ]
     return (
         <div>
